@@ -1,0 +1,348 @@
+/*Damos formato a la fuente*/
+
+@font-face {
+    font-family: 'longa_iberica';
+    src: url(../fonts/longa_iberica/LongaIberica-DEMO.ttf) format('truetype');
+}
+
+/*Damos formato al Header*/
+
+header {
+    background: black;
+    background: black;
+}
+
+.header {
+    display: flex;
+    /*Usamos display flex para colocar los elementos en fila*/
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+}
+
+.header img {
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Damos formato al nav-bar*/
+
+.navbar-brand {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+}
+
+/* Contenedor del enlace con la imagen */
+.enlace_reserva {
+    position: relative;
+    /* Define que el contenedor es relativo */
+    display: flex;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    margin-top: 20px;
+    /* Espacio superior */
+    width: 100%;
+    /* Asegura que el contenedor ocupe el ancho completo */
+    max-width: 800px;
+    /* Limita el ancho máximo del contenedor */
+    margin-left: auto;
+    margin-right: auto;
+    /* Centra el contenedor */
+}
+
+/*Diseño para la reserva de Entradas.*/
+
+.presentacion p {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 25px;
+
+}
+
+.presentacion b {
+    font-size: 30px;
+}
+
+/* Enlace dentro del contenedor */
+.enlace_reserva a {
+    position: relative;
+    /* Define un contexto de posicionamiento relativo */
+    display: inline-block;
+    text-decoration: none;
+    /* Quita el subrayado del enlace */
+    width: 100%;
+    /* El ancho del enlace es igual al contenedor */
+}
+
+/* Imagen dentro del enlace */
+.enlace_reserva img {
+    width: 100%;
+    /* Asegura que la imagen ocupe el ancho del enlace */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra alrededor de la imagen */
+}
+
+/* Texto superpuesto sobre la imagen */
+
+.enlace_reserva .overlay-text {
+    position: absolute;
+    /* Posiciona el texto respecto a .enlace_reserva */
+    top: 50%;
+    /* Centra verticalmente */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajuste para centrarlo exactamente */
+    font-family: 'longa_iberica', sans-serif;
+    /* Fuente del texto */
+    font-size: 24px;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Peso de la fuente */
+    color: white;
+    /* Color del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    /* Sombra para resaltar */
+    text-align: center;
+    z-index: 1;
+    /* Asegura que esté por encima de la imagen */
+    pointer-events: none;
+    /* Permite que el clic se registre en el enlace a pesar del texto */
+    padding: 10px;
+    /* Espacio interno del texto */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para que se vea mejor */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+/*Diseño de la Introducción de Samain*/
+
+.Samain {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#titulo2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 34px;
+}
+
+.Samain p {
+    color: black;
+    font-size: 30px;
+}
+
+.boton_samain {
+    width: 30vw;
+    border-radius: 10px;
+    background-color: rgb(255, 166, 0);
+    font-weight: bolder;
+    cursor: pointer;
+    /*Cambia el cursor al pasar*/
+    transition: transform 0.3s ease;
+    /*Transición suave*/
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.boton_samain:hover {
+    transform: scale(1.1);
+    /*Aumenta el tamaño un 10%*/
+}
+
+
+/*Damos formato al footer*/
+
+.quienes_somos,
+.contacto,
+.noticias {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.phone,
+.fax,
+.email,
+.location {
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: black;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'longa_iberica', sans-serif;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+.tweet_text a {
+    text-decoration: none;
+    color: white;
+}
+
+.tweet_time {
+.tweet_text a {
+    text-decoration: none;
+    color: white;
+}
+
+.tweet_time {
+    color: orange;
+}
+
+/*Damos formato a la estructura de la política de privacidad, el aviso legal y las Cookies*/
+.conditions {
+    list-style-type: none;
+
+}
+
+.conditions a {
+    text-decoration: none;
+    color: grey;
+    padding: 10px 15px;
+    /*Relleno interno para aumentar el área clicable*/
+    display: block;
+}
+
+.logo {
+    padding-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.logo img {
+    margin-left: 40px;
+}
+
+/*Damos formato para monitores grandes*/
+
+@media screen and (min-width: 700px) and (max-width: 3270px) {
+
+    /*Header*/
+
+    .header h1 {
+        margin-left: 70px;
+    }
+
+    /*Menu*/
+
+    .nav-item {
+        margin-left: 60px;
+
+    }
+
+    /*Galería de Imágenes*/
+
+
+
+    /*Explicación Samain*/
+
+    .Samain {
+        width: 90vw;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    /*footer*/
+
+    footer>div {
+        margin: 10px;
+    }
+
+    /*Usamos flexbox solo en main-sections*/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .main-sections {
+        display: flex;
+        justify-content: space-between;
+        /*Distribuye uniformemente las secciones*/
+        align-items: flex-start;
+        /*alinea la secciones por la parte superior*/
+        flex-wrap: wrap;
+        /*permite que se reorganicen en pantallas pequeñas*/
+    }
+
+    .main-sections .quienes_somos,
+    .main-sections .contacto,
+    .main-sections .noticias {
+        flex: 1;
+        /*Cada sección tendrá el mismo ancho*/
+    }
+
+    .Samain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+    }
+
+    /*Estilos para las listas*/
+
+    .legal_conditions {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .conditions {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*Estilos para los elementos de las listas*/
+
+    .conditions li {
+        margin-right: 15px;
+        /*Espaciado entre los elementos de la lista*/
+    }
+}
