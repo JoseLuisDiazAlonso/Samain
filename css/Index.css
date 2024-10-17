@@ -213,12 +213,6 @@ li {
 }
 
 .tweet_time {
-.tweet_text a {
-    text-decoration: none;
-    color: white;
-}
-
-.tweet_time {
     color: orange;
 }
 

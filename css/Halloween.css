@@ -51,6 +51,48 @@ header {
     margin-left: 10px;
 }
 
+/*Damos formato a la descripción de Halloween*/
+
+
+.halloween h2 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#imagen1 {
+    float: left;
+    /*La imagen queda fijada a la izquierda*/
+    margin: 10px;
+}
+
+.halloween p {
+    text-align: justify;
+    /*Justifica el texto para que se vea más ordenado.*/
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#imagen2 {
+    float: right;
+    margin: 10px;
+}
+
+
+#imagen4 {
+    float: left;
+    margin: 10px;
+}
+
+#imagen3 {
+    float: right;
+    margin: 10px;
+}
+
 footer {
     background-color: black;
     margin-top: 20px;
