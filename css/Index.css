@@ -66,12 +66,12 @@ header {
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
 .presentacion b {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 /* Enlace dentro del contenedor */
@@ -142,12 +142,12 @@ header {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: 34px;
+    font-size: 24px;
 }
 
 .Samain p {
     color: black;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .boton_samain {
@@ -246,7 +246,7 @@ li {
 
     /*Header*/
 
-    .header h1 {
+    .header img {
         margin-left: 70px;
     }
 
@@ -256,10 +256,6 @@ li {
         margin-left: 60px;
 
     }
-
-    /*Galería de Imágenes*/
-
-
 
     /*Explicación Samain*/
 

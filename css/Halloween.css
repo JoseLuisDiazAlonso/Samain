@@ -82,14 +82,8 @@ header {
     margin: 10px;
 }
 
-
-#imagen4 {
-    float: left;
-    margin: 10px;
-}
-
 #imagen3 {
-    float: right;
+    float: left;
     margin: 10px;
 }
 
@@ -146,4 +140,98 @@ li {
 
 .logo img {
     margin-left: 40px;
+}
+
+/*Adaptación a pantallas de monitor portatil y sobremesa*/
+
+@media screen and (min-width: 700px) and (max-width: 3270px) {
+
+    .header img {
+        margin-left: 70px;
+    }
+
+    .nav-item {
+        margin-left: 60px;
+    }
+
+    .foto_cabecera img {
+        width: 100vw;
+        height: 750px;
+    }
+
+    /*Eliminamos una de las tres fotos, la foto con id imagen3, del formato para monitores grandes y pequeños.*/
+
+    #imagen3 {
+        display: none;
+    }
+
+    /*footer*/
+
+    footer>div {
+        margin: 10px;
+    }
+
+    /*Usamos flexbox solo en main-sections*/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .main-sections {
+        display: flex;
+        justify-content: space-between;
+        /*Distribuye uniformemente las secciones*/
+        align-items: flex-start;
+        /*alinea la secciones por la parte superior*/
+        flex-wrap: wrap;
+        /*permite que se reorganicen en pantallas pequeñas*/
+    }
+
+    .main-sections .quienes_somos,
+    .main-sections .contacto,
+    .main-sections .noticias {
+        flex: 1;
+        /*Cada sección tendrá el mismo ancho*/
+    }
+
+    .Samain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+    }
+
+    /*Estilos para las listas*/
+
+    .legal_conditions {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .conditions {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*Estilos para los elementos de las listas*/
+
+    .conditions li {
+        margin-right: 15px;
+        /*Espaciado entre los elementos de la lista*/
+    }
 }
