@@ -1,0 +1,148 @@
+/*Damos formato a la fuente*/
+
+@font-face {
+    font-family: 'longa_iberica';
+    src: url(../fonts/longa_iberica/LongaIberica-DEMO.ttf) format('truetype');
+}
+
+/*Damos formato al Header*/
+
+header {
+    background: black;
+    background: black;
+}
+
+.header {
+    display: flex;
+    /*Usamos display flex para colocar los elementos en fila*/
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+}
+
+.header img {
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Damos formato al nav-bar*/
+
+.navbar-brand {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+}
+
+/*Damos formato al texto explicativo*/
+
+.historia_samain h2 {
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.historia_samain p {
+    color: black;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#imagen1 {
+    float: left;
+    margin: 10px;
+}
+
+#imagen2 {
+    float: right;
+    margin: 10px;
+}
+
+#imagen3 {
+    float: left;
+    margin: 10px;
+}
+
+#imagen4 {
+    float: right;
+    margin: 10px;
+}
+
+/*Damos formato al footer*/
+
+.quienes_somos,
+.contacto,
+.noticias {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.phone,
+.fax,
+.email,
+.location {
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: black;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'longa_iberica', sans-serif;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+.tweet_text a {
+    text-decoration: none;
+    color: white;
+}
+
+.tweet_time {
+    color: orange;
+}
+
+/*Damos formato a la estructura de la política de privacidad, el aviso legal y las Cookies*/
+.conditions {
+    list-style-type: none;
+
+}
+
+.conditions a {
+    text-decoration: none;
+    color: grey;
+    padding: 10px 15px;
+    /*Relleno interno para aumentar el área clicable*/
+    display: block;
+}
+
+.logo {
+    padding-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.logo img {
+    margin-left: 40px;
+}
