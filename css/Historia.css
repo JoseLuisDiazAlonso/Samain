@@ -35,7 +35,7 @@ header {
     font-weight: bold;
     font-size: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 /*Damos formato al texto explicativo*/
@@ -55,25 +55,18 @@ header {
     margin-right: 10px;
 }
 
-#imagen1 {
-    float: left;
-    margin: 10px;
+.historia_samain img {
+    display: block;
+    margin: 10px auto;
+    /*Centra la imagen*/
+    max-width: 90vw;
+    height: auto;
+    /*Mantiene la proporción de la imagen*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#imagen2 {
-    float: right;
-    margin: 10px;
-}
 
-#imagen3 {
-    float: left;
-    margin: 10px;
-}
-
-#imagen4 {
-    float: right;
-    margin: 10px;
-}
 
 /*Damos formato al footer*/
 
@@ -91,6 +84,8 @@ header {
     display: inline-flex;
     margin-left: 10px;
 }
+
+
 
 footer {
     background-color: black;
@@ -145,4 +140,120 @@ li {
 
 .logo img {
     margin-left: 40px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 3270px) {
+    /*Header*/
+
+    .header img {
+        margin-left: 70px;
+    }
+
+    /*Menu*/
+
+    .nav-item {
+        margin-left: 60px;
+
+    }
+
+    .navbar-brand {
+        margin-left: 30px;
+    }
+
+    .foto_cabecera {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-fluid {
+        width: 93vw;
+        height: 700px;
+        margin-left: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .historia_samain p {
+        margin-left: 20px;
+        margin-right: 25px;
+    }
+
+    #imagen1 {
+        float: left;
+        margin: 10px;
+        max-width: 30%;
+        /*Tamaño reducido para pantallas grandes*/
+        height: auto;
+    }
+
+    #imagen2 {
+        float: right;
+        margin: 10px;
+        max-width: 30%;
+        height: auto;
+    }
+
+    #imagen4 {
+        display: none;
+    }
+
+    /*footer*/
+
+    footer>div {
+        margin: 10px;
+    }
+
+    /*Usamos flexbox solo en main-sections*/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .main-sections {
+        display: flex;
+        justify-content: space-between;
+        /*Distribuye uniformemente las secciones*/
+        align-items: flex-start;
+        /*alinea la secciones por la parte superior*/
+        flex-wrap: wrap;
+        /*permite que se reorganicen en pantallas pequeñas*/
+    }
+
+    .main-sections .quienes_somos,
+    .main-sections .contacto,
+    .main-sections .noticias {
+        flex: 1;
+        /*Cada sección tendrá el mismo ancho*/
+    }
+
+    /*Estilos para las listas*/
+
+    .legal_conditions {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .conditions {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*Estilos para los elementos de las listas*/
+
+    .conditions li {
+        margin-right: 15px;
+        /*Espaciado entre los elementos de la lista*/
+    }
 }

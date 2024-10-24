@@ -35,7 +35,7 @@ header {
     font-weight: bold;
     font-size: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 /* Contenedor del enlace con la imagen */
@@ -255,6 +255,10 @@ li {
     .nav-item {
         margin-left: 60px;
 
+    }
+
+    .navbar-brand {
+        margin-left: 10px;
     }
 
     /*Explicación Samain*/
