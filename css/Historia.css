@@ -174,6 +174,11 @@ li {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
+    .historia_samain {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
     .historia_samain p {
         margin-left: 20px;
         margin-right: 25px;
