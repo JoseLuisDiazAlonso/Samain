@@ -38,25 +38,16 @@ header {
     letter-spacing: 2px;
 }
 
-/*Damos formato a la imagen de presentación*/
-
-.imagen_Presentacion {
-    display: block;
-    margin: 10px auto;
-    max-width: 90vw;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/*Damos Formato para la distribución de los programas*/
+.programas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-
-/*Damos formato al texto de presentación.*/
-
-.presentacionSocios p {
-    color: black;
-    font-size: 20px;
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
+.programas img {
+    display: block;
+    margin-top: 10px;
 }
 
 /*Damos formato al footer*/
@@ -75,46 +66,6 @@ header {
     display: inline-flex;
     margin-left: 10px;
 }
-
-/*Contenedor de las Carpetas*/
-
-.folder {
-    background-color: #4285f4;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 150px;
-    transition: background-color 0.3s;
-}
-
-.folder:hover {
-    background-color: #3367d6;
-}
-
-/*Estilos para las imagenes dentro de las carpetas*/
-
-.folder-content {
-    display: none;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.photo img {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.photo img:hover {
-    transform: scale(1.1);
-}
-
 
 footer {
     background-color: black;
@@ -136,6 +87,10 @@ p {
 
 li {
     color: white;
+}
+
+.ultimas_noticias h2 {
+    margin-left: 10px;
 }
 
 .tweet_text a {
