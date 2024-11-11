@@ -170,3 +170,109 @@ li {
 .logo img {
     margin-left: 40px;
 }
+
+/*Damos formato para monitores grandes*/
+
+@media screen and (min-width: 700px) and (max-width: 3270px) {
+
+    /*Header*/
+
+    .header img {
+        margin-left: 70px;
+    }
+
+    /*Menu*/
+
+    .nav-item {
+        margin-left: 60px;
+
+    }
+
+    .navbar-brand {
+        margin-left: 10px;
+    }
+
+    /*Explicación Samain*/
+
+    .Samain {
+        width: 90vw;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .row {
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*footer*/
+
+    footer>div {
+        margin: 10px;
+    }
+
+    /*Usamos flexbox solo en main-sections*/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .main-sections {
+        display: flex;
+        justify-content: space-between;
+        /*Distribuye uniformemente las secciones*/
+        align-items: flex-start;
+        /*alinea la secciones por la parte superior*/
+        flex-wrap: wrap;
+        /*permite que se reorganicen en pantallas pequeñas*/
+    }
+
+    .main-sections .quienes_somos,
+    .main-sections .contacto,
+    .main-sections .noticias {
+        flex: 1;
+        /*Cada sección tendrá el mismo ancho*/
+    }
+
+    .Samain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+    }
+
+    /*Estilos para las listas*/
+
+    .legal_conditions {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .conditions {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*Estilos para los elementos de las listas*/
+
+    .conditions li {
+        margin-right: 15px;
+        /*Espaciado entre los elementos de la lista*/
+    }
+}
