@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/Socios_colaboradores.css">
-    <title>Socios Colaboradores</title>
+    <link rel="stylesheet" href="../css/Contacto.css">
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -70,54 +70,41 @@
         </div>
     </nav>
 
-    <div class="socios">
-        <img src="../media/Samainlogo.jpg" alt="Imagen de gente danzando en el fuego" class="imagen_Presentacion">
+    <!--Formulario de Contacto-->
+
+    <div class="formulario_contacto">
+        <h1>Contacto</h1>
+        <form class="formulario" id="formulario" action="submit" method="post">
+            <fieldset>
+                <div class="inputContainer">
+                    <label>Nombre</label>
+                    <input type="text" id="nombre_contacto" name="nombre">
+                </div>
+                <div class="inputContainer">
+                    <label>Teléfono</label>
+                    <input type="number" id="telefono_contacto" name="telefono">
+                </div>
+                <div class="inputContainer">
+                    <label>Email</label>
+                    <input type="email" id="email_contacto" name="email">
+                </div>
+                <div class="inputContainer">
+                    <label>Asunto</label>
+                    <input type="text" id="asunto_contacto" name="asunto">
+                </div>
+                <div class="inputContainer">
+                    <label>Comentarios</label>
+                    <textarea name="contenido" id="comentarios_contacto" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
     </div>
 
-    <div class="presentacionSocios">
-        <p>
-            Desde el Origen en 2015 de la idea de Samain, la Asociación Cultural Celtibérica "Tierraquemada" desea que
-            su proyecto sea considerado y compartido, como algo suyo y propio,
-            por todas aquellas instituciones, entidades, empresas y personas que desean participar en la conservación,
-            difusión y revalorización de esta tradición, como elemento de
-            identidad, disfrute cultural y desarrollo socioeconómico.
-        </p>
-        <p>
-            Junto al Ayuntamiento de Garray, organizador del evento, han aportado su cariño y colaboración al proyecto
-            al Diputación Provincial de Soria, la Asociación Cultural Numancia y la
-            Cofradia de Flagelación del Señor. Esta última, con la cesión de los tambores que amenizan el desfile de
-            antorchas.
-        </p>
-        <p>
-            Sin todos ellos, Samain no sería posible. ¡Gracias!
-        </p>
+    <div class="posicion">
+        <div id="map"></div>
     </div>
 
-    <!--Cards de los Socios Colaboradores-->
-
-    <div class="sociosColaboradores">
-        <div class="card" style="width: 18rem;">
-            <img src="../media/lodoDiputacion.png" class="card-img-top" alt="Logo de la diputación de Soria">
-            <div class="card-body">
-                <a href="https://www.dipsoria.es/">Diputación de Soria</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="../media/logoCofradiaSenor.png" class="card-img-top"
-                alt="Logo de la Cofradia de Flagelación del Señor">
-            <div class="card-body">
-                <a href="https://flagelacionsoria.es/">Cofradia de Flagelación del Señor</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="../media/logoNumanciaOnline.jpg" class="card-img-top" alt="Logo de Numancia Online">
-            <div class="card-body">
-                <a href="https://numanciaonline.es/">Numancia Online</a>
-            </div>
-        </div>
-    </div>
     <!--Footer-->
 
     <footer>
