@@ -38,63 +38,33 @@ header {
     letter-spacing: 2px;
 }
 
-/*Damos formato al Formulario*/
-
-fieldset {
-    background-color: black;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.formulario_contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.formulario_contacto input {
+body {
     display: block;
-    margin: 10px auto;
-}
-
-.inputContainer {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    height: 100vh;
+    margin: 0;
+
 }
 
-label {
-    margin-bottom: 5px;
-    color: white;
-}
+/*Configuramos la dirección*/
 
-input {
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(249, 248, 248, 0.854);
+.direccion {
     text-align: center;
 }
 
-textarea {
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(249, 248, 248, 0.854);
+.direccion h2 {
+    color: black;
+    font-weight: bold;
 }
 
-button {
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(249, 248, 248, 0.854);
-    background-color: rgb(255, 166, 0);
-}
+/*Centramos el mapa*/
 
 #map {
     width: 90vw;
     margin-top: 10px;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     height: 280px;
 
 }
@@ -192,18 +162,9 @@ li {
         margin-left: 10px;
     }
 
-    /*Explicación Samain*/
-
-    .Samain {
+    .posicion {
         width: 90vw;
-        justify-content: center;
-        text-align: center;
-
-    }
-
-    fieldset {
-        padding-left: 100px;
-        padding-right: 100px;
+        margin-left: 30px;
     }
 
     /*footer*/
