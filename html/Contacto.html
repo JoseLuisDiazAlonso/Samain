@@ -70,40 +70,20 @@
         </div>
     </nav>
 
-    <!--Formulario de Contacto-->
+    <!--Contacto-->
 
-    <div class="formulario_contacto">
-        <h1>Contacto</h1>
-        <form class="formulario" id="formulario" action="submit" method="post">
-            <fieldset>
-                <div class="inputContainer">
-                    <label>Nombre</label>
-                    <input type="text" id="nombre_contacto" name="nombre">
-                </div>
-                <div class="inputContainer">
-                    <label>Teléfono</label>
-                    <input type="number" id="telefono_contacto" name="telefono">
-                </div>
-                <div class="inputContainer">
-                    <label>Email</label>
-                    <input type="email" id="email_contacto" name="email">
-                </div>
-                <div class="inputContainer">
-                    <label>Asunto</label>
-                    <input type="text" id="asunto_contacto" name="asunto">
-                </div>
-                <div class="inputContainer">
-                    <label>Comentarios</label>
-                    <textarea name="contenido" id="comentarios_contacto" cols="30" rows="10"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
-    </div>
+        <div class="direccion">
+            <h2>CONTACTA CON NOSOTROS</h2>
+            <address>
+                <strong>C/Garrejo, 17 Bajo 42162 Garray (Soria)</strong><br>
+                <a href="mailto:administracion@numantinos.com">administracion@numantinos.com</a><br>
+                <a href="tel:+34 975 252 248">+34 975 252 248</a>
+            </address>
+        </div>
 
-    <div class="posicion">
-        <div id="map"></div>
-    </div>
+        <div class="posicion">
+            <div id="map"></div>
+        </div>
 
     <!--Footer-->
 
@@ -195,6 +175,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="../js/Contacto.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpLPKGLLroWvEmfESmMxVD_UWzYi-5rr4&callback=initMap"
+        async defer>
+        </script>
 </body>
 
 </html>
