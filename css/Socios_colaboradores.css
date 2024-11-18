@@ -77,6 +77,13 @@ header {
     margin-top: 10px;
 }
 
+.card-img-top {
+    width: 90%;
+    /*Aseguramos que la imágen ocupe todo el ancho del contenedor*/
+    height: 150px;
+    /*Define una altura fija para las imágenes*/
+}
+
 .card-body a {
     text-decoration: none;
     font-weight: bolder;
