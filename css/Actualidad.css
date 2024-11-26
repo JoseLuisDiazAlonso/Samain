@@ -73,6 +73,55 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.programa {
+    width: 90vw;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+    background-image: url(../media/papiro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #4a3622;
+}
+
+.programa h3,
+.programa ul,
+.programa ul li,
+.programa ul li p {
+    margin: 0 auto;
+    /*Asegura que todos los elementos secundarios estén centrados*/
+    text-align: center;
+}
+
+.programa h3 {
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: red;
+    margin-top: 20px;
+}
+
+.programa li {
+    color: black;
+}
+
+.programa p {
+    color: black;
+}
+
+.programa ul li {
+    font-size: 1.3em;
+    /*Aumentamos el tamaño de la fuente*/
+    font-weight: bold;
+}
+
+.programa ul li p {
+    font-weight: normal;
+}
+
 /*Damos formato al footer*/
 
 .quienes_somos,
