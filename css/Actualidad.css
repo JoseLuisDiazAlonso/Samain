@@ -43,6 +43,10 @@ header {
     margin-top: 20px;
 }
 
+.programa li {
+    list-style: none;
+}
+
 .programas-carteles img {
     max-width: 90vw;
     height: auto;
@@ -215,14 +219,19 @@ li {
         margin-left: 10px;
     }
 
-    /*Explicación Samain*/
-
-    .Samain {
-        width: 90vw;
-        justify-content: center;
-        text-align: center;
-
+    .programas-carteles img {
+        width: 45%;
+        height: auto;
+        margin-right: 40px;
     }
+
+    .programas-carteles {
+        justify-content: space-between;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+
+
 
     /*footer*/
 

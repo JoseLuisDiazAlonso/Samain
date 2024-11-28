@@ -43,12 +43,20 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    font-weight: bolder;
     gap: 20px;
 }
 
 .programas img {
     display: block;
     margin-top: 10px;
+}
+
+.programas-carteles figcaption {
+    font-size: 0.9rem;
+    color: black;
+    margin-top: 8px;
 }
 
 /*Estilos para el lightbox*/
