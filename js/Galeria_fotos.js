@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: 'Samain 2024',
             folderPath: '../media/2024/',
-            images: ['foto1.jpg', 'foto2.jpg', 'foto3.jpg', 'foto4.jpg', 'foto5.jpg', 'foto6.jpg', 'foto7.jpg', 'foto8.jpg', 'foto9.jpg', 'foto10.jpg', 'foto11.jpg',
+            images: ['foto3.jpg', 'foto2.jpg', 'foto1.jpg', 'foto4.jpg', 'foto5.jpg', 'foto6.jpg', 'foto7.jpg', 'foto8.jpg', 'foto9.jpg', 'foto10.jpg', 'foto11.jpg',
                 'foto12.jpg', 'foto13.jpg', 'foto14.jpg', 'foto15.jpg', 'foto16.jpg', 'foto17.jpg', 'foto18.jpg', 'foto19.jpg'
             ]
 
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: 'Samain 2017',
             folderPath: '../media/Samain2017/',
-            images: ['foto1.jpg', 'foto2.jpg', 'foto3.jpg', 'foto4.jpg', 'foto5.jpg', 'foto6.jpg', 'foto7.jpg', 'foto8.jpg', 'foto9jpg', 'foto10.jpg', 'foto11.jpg', 'foto12.jpg']
+            images: ['foto10.jpg', 'foto2.jpg', 'foto3.jpg', 'foto4.jpg', 'foto5.jpg', 'foto6.jpg', 'foto7.jpg', 'foto8.jpg','foto1.jpg', 'foto11.jpg', 'foto12.jpg']
         },
     ];
 
