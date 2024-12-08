@@ -172,7 +172,7 @@ header {
 
 .quienes_somos,
 .contacto,
-.noticias {
+.ultimas_noticias {
     display: inline-block;
     margin-left: 10px;
 }
@@ -238,6 +238,28 @@ li {
 
 .logo img {
     margin-left: 40px;
+}
+
+/*Damos formato al estilo del cuadro de aceptar Cookies*/
+
+#cookieConsent {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+#acceptCookies {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
 /*Damos formato para monitores grandes*/
@@ -339,4 +361,16 @@ li {
         margin-right: 15px;
         /*Espaciado entre los elementos de la lista*/
     }
+
+    #cookieConsent {
+        width: 40vw;
+        top: 50%;
+        left: 50%;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        /*Ajuste para centrar*/
+        text-align: center;
+        margin-top: 120px;
+    }
+
 }
