@@ -1,6 +1,8 @@
 # Samain
 Una página web Estática destinada a la promoción de un evento llevado a cabo por una asociación cultural.
 
+#Todo el código lo podrás encontrar en la rama Master.
+
 [![HTML5](https://img.shields.io/badge/HTML5-39E09B?style=for-the-badge&logo=HTML5&logoColor=white&labelColor=101010)]()
 [![CSS](https://img.shields.io/badge/CSS-1877F2?style=for-the-badge&logo=CSS&logoColor=white&labelColor=101010)]()
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)]()
