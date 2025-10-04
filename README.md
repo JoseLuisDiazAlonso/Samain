@@ -26,7 +26,7 @@ Para ver el proyecto en tu entorno local, sigue estos pasos:
 
 1. **Clona el Repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/nombre-repositorio.git
+   git clone https://github.com/JoseLuisDiazAlonso/Samain.git
 
 2. **Navega al Directorio del Proyecto**:
 
