@@ -20,3 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("cookieConsent").style.display = "none";
     });
 });
+
+/**Función para controlar el video */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("intro-video");
+    const videoContainer = document.getElementById("video-container");
+    const mainContent = document.getElementById("main-content");
+
+    //Cuando el video termine
+
+    video.onended = () => {
+        videoContainer.style.display = "none";
+        mainContent.style.display = "block";
+    };
+});
