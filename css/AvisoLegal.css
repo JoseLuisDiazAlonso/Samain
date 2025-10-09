@@ -14,17 +14,18 @@ header {
 
 .header {
     display: flex;
-    /*Usamos display flex para colocar los elementos en fila*/
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
-
+    height: 100px;
+    padding: 0 20px;
 }
 
-.header img {
-    margin-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.header img:first-child {
+    height: 70px;  /*Logo Izquierda*/
+}
+
+.header img:last-child {
+    height: 120px; /*Texto Samain más grande*/
+    object-fit: contain; /*Evita deformaciones*/
 }
 
 /*Damos formato al nav-bar*/

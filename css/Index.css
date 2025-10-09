@@ -5,6 +5,33 @@
     src: url(../fonts/longa_iberica/LongaIberica-DEMO.ttf) format('truetype');
 }
 
+/*Video a pantalla completa*/
+
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#intro-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/*Contenido oculto hasta que termine el video*/
+
+#main-content {
+    padding: 20px;
+}
+
 /*Damos formato al Header*/
 
 header {
@@ -14,17 +41,18 @@ header {
 
 .header {
     display: flex;
-    /*Usamos display flex para colocar los elementos en fila*/
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
-
+    height: 100px;
+    padding: 0 20px;
 }
 
-.header img {
-    margin-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.header img:first-child {
+    height: 70px;  /*Logo Izquierda*/
+}
+
+.header img:last-child {
+    height: 120px; /*Texto Samain más grande*/
+    object-fit: contain; /*Evita deformaciones*/
 }
 
 /*Damos formato al nav-bar*/
@@ -36,6 +64,21 @@ header {
     font-size: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
+}
+
+/*Carousel de imágenes*/
+
+#carouselExampleIndicators {
+    max-height: 580px; /*Controla la altura de las imágenes*/
+    overflow: hiden; /*Oculta lo que sobresalga*/
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#carouselExampleIndicators img {
+    height: 580px;
+    object-fit: cover; /*recorta sin deformar la imagen*/
+    border-radius: 20px;
 }
 
 /* Contenedor del enlace con la imagen */

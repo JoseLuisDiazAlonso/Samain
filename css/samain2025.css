@@ -5,10 +5,10 @@
     src: url(../fonts/longa_iberica/LongaIberica-DEMO.ttf) format('truetype');
 }
 
+
 /*Damos formato al Header*/
 
 header {
-    background: black;
     background: black;
 }
 
@@ -27,36 +27,99 @@ header {
     height: 120px; /*Texto Samain más grande*/
     object-fit: contain; /*Evita deformaciones*/
 }
+
 /*Damos formato al nav-bar*/
 
 .navbar-brand {
     font-family: Arial, Helvetica, sans-serif;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
 }
 
-/*Damos formato a la imagen de presentación*/
+/*Damos formato a los diferentes carteles*/
 
-.imagen_Presentacion {
-    display: block;
-    margin: 10px auto;
+.programas-carteles {
+    width: 90vw;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.programas-carteles img {
     max-width: 90vw;
     height: auto;
-    border-radius: 10px;
+}
+
+/*Estilos para el lightbox*/
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+/*Imagen dentro del lightbox*/
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.programa {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background: radial-gradient(circle at center, #a8edea 0%, #6ee7b7 60%, #3eb489 100%);   
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/*Damos formato al texto de presentación.*/
+.programa h3,
+.programa ul,
+.programa ul li,
+.programa ul li p {
+    margin: 0 auto;
+    /*Asegura que todos los elementos secundarios estén centrados*/
+    text-align: center;
+}
 
-.presentacionSocios p {
+.programa h3,
+.programa h4,
+.programa h5 {
+    font-weight: bolder;
+    color:rgb(7, 80, 237);
+    margin-top: 20px;
+}
+
+.programa li {
     color: black;
-    font-size: 20px;
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
+    list-style: none;
+}
+
+.programa p {
+    color: black;
+}
+
+.programa ul li {
+    /*Aumentamos el tamaño de la fuente*/
+    font-weight: bold;
+}
+
+.programa ul li p {
+    font-weight: normal;
 }
 
 /*Damos formato al footer*/
@@ -76,45 +139,12 @@ header {
     margin-left: 10px;
 }
 
-/*Contenedor de las Carpetas*/
-
-.folder {
-    background-color: #4285f4;
+.phone p,
+.fax p,
+.email p,
+.location p {
     color: white;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 150px;
-    transition: background-color 0.3s;
 }
-
-.folder:hover {
-    background-color: #3367d6;
-}
-
-/*Estilos para las imagenes dentro de las carpetas*/
-
-.folder-content {
-    display: none;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.photo img {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.photo img:hover {
-    transform: scale(1.1);
-}
-
 
 footer {
     background-color: black;
@@ -192,18 +222,16 @@ li {
         margin-left: 10px;
     }
 
-    /*Explicación Samain*/
-
-    .Samain {
-        width: 90vw;
-        justify-content: center;
-        text-align: center;
-
-    }
-
-    .row {
+    .programas-carteles {
+        display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .programas-carteles img {
+        width: 45%;
+       
+        height: auto;
     }
 
     /*footer*/
@@ -237,17 +265,6 @@ li {
     .main-sections .noticias {
         flex: 1;
         /*Cada sección tendrá el mismo ancho*/
-    }
-
-    .Samain {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        margin-left: 40px;
-        margin-right: 40px;
-        text-align: center;
     }
 
     /*Estilos para las listas*/
