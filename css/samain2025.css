@@ -49,6 +49,7 @@ header {
 .programas-carteles img {
     max-width: 90vw;
     height: auto;
+    margin-top: 20px;
 }
 
 /*Estilos para el lightbox*/
@@ -78,7 +79,7 @@ header {
 
 .programa {
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 10px;
     text-align: center;
     border-radius: 15px;
@@ -226,6 +227,7 @@ li {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 60px;
     }
 
     .programas-carteles img {
@@ -234,6 +236,11 @@ li {
         height: auto;
     }
 
+    .programa {
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
     /*footer*/
 
     footer>div {
