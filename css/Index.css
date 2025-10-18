@@ -18,6 +18,8 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
 }
 
 #intro-video {
@@ -26,16 +28,9 @@
     object-fit: cover;
 }
 
-/*Contenido oculto hasta que termine el video*/
-
-#main-content {
-    padding: 20px;
-}
-
 /*Damos formato al Header*/
 
 header {
-    background: black;
     background: black;
 }
 
@@ -59,7 +54,6 @@ header {
 
 .navbar-brand {
     font-family: Arial, Helvetica, sans-serif;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -70,7 +64,7 @@ header {
 
 #carouselExampleIndicators {
     max-height: 580px; /*Controla la altura de las imágenes*/
-    overflow: hiden; /*Oculta lo que sobresalga*/
+    overflow: hidden; /*Oculta lo que sobresalga*/
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -79,6 +73,30 @@ header {
     height: 580px;
     object-fit: cover; /*recorta sin deformar la imagen*/
     border-radius: 20px;
+}
+
+/* Estilos para la sección de presentación */
+.presentacion {
+    display: block;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.presentacion p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.presentacion b {
+    font-weight: 700;
 }
 
 /* Contenedor del enlace con la imagen */
@@ -99,22 +117,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     /* Centra el contenedor */
-}
-
-/*Diseño para la reserva de Entradas.*/
-
-.presentacion p {
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: 20px;
-
-}
-
-.presentacion b {
-    font-size: 24px;
 }
 
 /* Enlace dentro del contenedor */
@@ -141,7 +143,6 @@ header {
 }
 
 /* Texto superpuesto sobre la imagen */
-
 .enlace_reserva .overlay-text {
     position: absolute;
     /* Posiciona el texto respecto a .enlace_reserva */
@@ -151,7 +152,7 @@ header {
     /* Centra horizontalmente */
     transform: translate(-50%, -50%);
     /* Ajuste para centrarlo exactamente */
-    font-family: 'longa_iberica', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     /* Fuente del texto */
     font-size: 24px;
     /* Tamaño del texto */
@@ -174,6 +175,209 @@ header {
     /* Bordes redondeados */
 }
 
+/*Diseño para la sección de Noticias*/
+.updates-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.updates-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.updates-carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    background: #f8f9fa;
+    padding: 20px;
+    flex: 1;
+}
+
+.updates-carousel-track {
+    display: flex;
+    gap: 32px;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Desktop: 3 cards */
+@media (min-width: 1025px) {
+    .card {
+        width: calc((100% - 64px) / 3); /* 64px = 2 gaps de 32px */
+    }
+}
+
+/* Tablet: 2 cards */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card {
+        width: calc((100% - 32px) / 2); /* 32px = 1 gap de 32px */
+    }
+}
+
+/* Mobile: 1 card */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.card-description {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.updates-carousel-btn {
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.95);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-size: 2rem;
+    color: #ff6600;
+    flex-shrink: 0;
+}
+
+.updates-carousel-btn:hover {
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.updates-carousel-btn:active {
+    transform: scale(0.95);
+}
+
+.updates-carousel-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.updates-carousel-btn:disabled:hover {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.updates-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #ff6600;
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Responsive específico para móviles */
+@media (max-width: 768px) {
+    .card-image {
+        height: 200px;
+    }
+
+    .updates-carousel-container {
+        padding: 15px;
+    }
+
+    .updates-carousel-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+
+    .updates-carousel-wrapper {
+        gap: 10px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .updates-carousel-track {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .updates-section {
+        padding: 0 10px;
+    }
+
+    .updates-carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .card-image {
+        height: 180px;
+    }
+}
 /*Diseño de la Introducción de Samain*/
 
 .Samain {
@@ -262,7 +466,6 @@ li {
 /*Damos formato a la estructura de la política de privacidad, el aviso legal y las Cookies*/
 .conditions {
     list-style-type: none;
-
 }
 
 .conditions a {
@@ -319,7 +522,6 @@ li {
 
     .nav-item {
         margin-left: 60px;
-
     }
 
     .navbar-brand {
@@ -332,7 +534,6 @@ li {
         width: 90vw;
         justify-content: center;
         text-align: center;
-
     }
 
     /*footer*/
@@ -386,7 +587,6 @@ li {
         justify-content: flex-start;
         align-items: center;
         padding: 0;
-
     }
 
     .conditions {
@@ -415,5 +615,87 @@ li {
         text-align: center;
         margin-top: 120px;
     }
+}
 
+/*Redes Sociales*/
+.footer-social-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-section h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.footer-social-link.facebook {
+    background-color: #1877f2;
+}
+
+.footer-social-link.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.footer-social-link:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-social-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .footer-social-link {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    
+    .footer-social-icons {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-social-section {
+        padding: 20px 15px;
+    }
+    
+    .footer-social-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
 }

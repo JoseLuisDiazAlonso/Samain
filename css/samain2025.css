@@ -83,44 +83,63 @@ header {
     margin-right: 10px;
     text-align: center;
     border-radius: 15px;
-    background: radial-gradient(circle at center, #a8edea 0%, #6ee7b7 60%, #3eb489 100%);   
+    background: radial-gradient(
+        ellipse at center,
+        #ff6b35 0%,
+        #f7931e 10%,
+        #c1440e 20%,
+        #8b3a0e 30%,
+        #4a1f0a 40%,
+        #1a0a0a 55%,
+        #0a0a0a 70%,
+        #000000 100%
+    );
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
 }
 
+/* Añade este nuevo estilo para el efecto de parpadeo */
+.programa::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 50% 50%, rgba(255, 200, 100, 0.2) 0%, transparent 25%),
+        radial-gradient(circle at 50% 50%, rgba(255, 140, 50, 0.15) 0%, transparent 35%);
+    pointer-events: none;
+    animation: flicker 4s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.85; }
+}
+
+/* Asegura que el contenido esté sobre el efecto */
 .programa h3,
 .programa ul,
 .programa ul li,
-.programa ul li p {
-    margin: 0 auto;
-    /*Asegura que todos los elementos secundarios estén centrados*/
-    text-align: center;
-}
-
-.programa h3,
+.programa ul li p,
 .programa h4,
-.programa h5 {
-    font-weight: bolder;
-    color:rgb(7, 80, 237);
-    margin-top: 20px;
+.programa h5,
+.programa li,
+.programa p {
+    position: relative;
+    z-index: 1;
 }
 
 .programa li {
-    color: black;
     list-style: none;
 }
 
-.programa p {
-    color: black;
-}
-
-.programa ul li {
-    /*Aumentamos el tamaño de la fuente*/
-    font-weight: bold;
-}
-
-.programa ul li p {
-    font-weight: normal;
+.programa h3, .programa h4, .programa h5, .programa h6 {
+    color: white;
 }
 
 /*Damos formato al footer*/
@@ -298,5 +317,87 @@ li {
     .conditions li {
         margin-right: 15px;
         /*Espaciado entre los elementos de la lista*/
+    }
+}
+/*Redes Sociales*/
+.footer-social-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-section h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.footer-social-link.facebook {
+    background-color: #1877f2;
+}
+
+.footer-social-link.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.footer-social-link:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-social-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .footer-social-link {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    
+    .footer-social-icons {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-social-section {
+        padding: 20px 15px;
+    }
+    
+    .footer-social-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
     }
 }
