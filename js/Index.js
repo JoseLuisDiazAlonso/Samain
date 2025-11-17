@@ -85,6 +85,33 @@ document.addEventListener("DOMContentLoaded", function () {
 // Array de artículos
 const updates = [
     {
+        image: "../media/arbolSamain.jpg",
+        title: "El Bosque de los Héroes",
+        description: "El 1 de noviembre, a las 12:00 horas, no te pierdas el acto más emotivo de Interkeltoi",
+        url: "../html/articulo11.html"
+    },
+    {
+        image: "../media/thumbnails/videoMusical.png",
+        title: "IRISH TREBLE en concierto",
+        description: "No te pierdas a nuestras representantes irlandesas",
+        url: "../html/articulo10.html"
+
+    },
+    {
+        image: "../media/thumbnails/videoInMyDreams.png",
+        title: "TIC TAC!",
+        description: "Se acerca el momento",
+        url: "../html/articulo9.html"
+
+    },
+    {
+        image: "../media/thumbnails/videoDanza.png",
+        title: "Danza Samain 2025",
+        description: "Sabías que la Danza de Samain se prepara con un mes de Antelación.",
+        url: "../html/articulo8.html"
+
+    },
+    {
         image: "../media/saukon.jpg",
         title: "Samain 2025",
         description: "Saukon, el espíritu del bosque.",
