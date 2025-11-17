@@ -5,6 +5,73 @@
     src: url(../fonts/longa_iberica/LongaIberica-DEMO.ttf) format('truetype');
 }
 
+/* Añade estos estilos al principio de tu CSS (después de @font-face) */
+
+/* Fondo oscuro para simular la noche */
+body {
+    background-color: #0a0a0a;
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+    min-height: 100vh;
+}
+
+/* Navbar con efecto hoguera - mantiene funcionalidad */
+.navbar {
+    background: rgba(20, 20, 20, 0.95) !important;
+    box-shadow: 0 4px 20px rgba(255, 102, 0, 0.4);
+    border-bottom: 2px solid rgba(255, 102, 0, 0.3);
+}
+
+.navbar .nav-link {
+    color: #e0e0e0 !important;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ff6600 !important;
+    text-shadow: 0 0 10px rgba(255, 102, 0, 0.6);
+}
+
+.navbar-brand {
+    color: #ff6600 !important;
+}
+
+.dropdown-menu {
+    background-color: rgba(20, 20, 20, 0.95) !important;
+    border: 1px solid rgba(255, 102, 0, 0.3);
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 102, 0, 0.2) !important;
+    color: #ff6600 !important;
+}
+
+/* Botón hamburguesa en móvil con líneas naranjas */
+.navbar-toggler {
+    border-color: rgba(255, 102, 0, 0.5);
+    background-color: rgba(255, 102, 0, 0.1);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.25);
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 102, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hover effect para el botón */
+.navbar-toggler:hover {
+    background-color: rgba(255, 102, 0, 0.2);
+    border-color: rgba(255, 102, 0, 0.8);
+}
+
+
+
 /*Damos formato al Header*/
 
 header {
@@ -51,10 +118,11 @@ header {
 .avisoLegal h1 {
     margin-left: 5px;
     margin-right: 5px;
+    color: red;
 }
 
 .avisoLegal p {
-    color: black;
+    color: white;
     margin-left: 10px;
     margin-right: 10px;
     text-align: justify;
@@ -312,4 +380,22 @@ li {
         height: 45px;
         font-size: 20px;
     }
+}
+
+/* Añade animación de parpadeo sutil para simular fuego */
+@keyframes fireGlow {
+    0%, 100% {
+        box-shadow: 0 0 30px rgba(255, 102, 0, 0.5),
+                    0 0 60px rgba(255, 102, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 102, 0, 0.7),
+                    0 0 80px rgba(255, 102, 0, 0.4);
+    }
+}
+
+.presentacion,
+.updates-carousel-container,
+.Samain {
+    animation: fireGlow 3s ease-in-out infinite;
 }
