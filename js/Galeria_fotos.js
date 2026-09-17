@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Lista de álbumes con las imágenes
     const albums = [
         {
+            title: 'Samain 2025',
+            folderPath: '../media/Samain2025/',
+            images: ['foto2.jpg', 'foto1.jpg', 'foto3.jpg', 'foto4.jpg', 'foto5.jpg', 'foto6.jpg', 'foto7.jpg', 'foto8.jpg', 'foto9.jpg', 'foto10.jpg', 'foto11.jpg']
+
+        },
+        {
             title: 'Samain 2024',
             folderPath: '../media/2024/',
             images: ['foto3.jpg', 'foto2.jpg', 'foto1.jpg', 'foto4.jpg', 'foto5.jpg', 'foto6.jpg', 'foto7.jpg', 'foto8.jpg', 'foto9.jpg', 'foto10.jpg', 'foto11.jpg',
