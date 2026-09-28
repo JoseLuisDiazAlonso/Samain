@@ -1,0 +1,195 @@
+:root {
+    --color-bg: #15110c;
+    --color-ember: #e0632a;
+    --color-ember-rgb: 224, 99, 42;
+    --color-bronze: #b4924c;
+    --color-text: #f2ece2;
+    --color-text-rgb: 242, 236, 226;
+    --color-text-muted: #8a8073;
+    --font-heading: 'Fraunces', serif;
+    --font-body: 'Work Sans', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--color-bg);
+    background-image:
+        radial-gradient(ellipse at top, rgba(var(--color-ember-rgb), 0.20) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom, rgba(var(--color-ember-rgb), 0.30) 0%, transparent 60%);
+    background-attachment: fixed;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+}
+
+/* ========== Chispas globales (igual que en index.css) ========== */
+.chispas-global {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.chispas-global .chispa {
+    position: absolute;
+    bottom: -10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--color-ember);
+    opacity: 0;
+    animation: subir-chispa-global 8s ease-in infinite;
+}
+
+.chispas-global .chispa:nth-child(1)  { left: 4%;  animation-delay: 0s; }
+.chispas-global .chispa:nth-child(2)  { left: 11%; animation-delay: 1.5s; }
+.chispas-global .chispa:nth-child(3)  { left: 18%; animation-delay: 3s; }
+.chispas-global .chispa:nth-child(4)  { left: 26%; animation-delay: 0.8s; }
+.chispas-global .chispa:nth-child(5)  { left: 34%; animation-delay: 4.2s; }
+.chispas-global .chispa:nth-child(6)  { left: 42%; animation-delay: 2.2s; }
+.chispas-global .chispa:nth-child(7)  { left: 50%; animation-delay: 5s; }
+.chispas-global .chispa:nth-child(8)  { left: 58%; animation-delay: 1s; }
+.chispas-global .chispa:nth-child(9)  { left: 66%; animation-delay: 3.7s; }
+.chispas-global .chispa:nth-child(10) { left: 73%; animation-delay: 0.4s; }
+.chispas-global .chispa:nth-child(11) { left: 80%; animation-delay: 6s; }
+.chispas-global .chispa:nth-child(12) { left: 87%; animation-delay: 2.8s; }
+.chispas-global .chispa:nth-child(13) { left: 93%; animation-delay: 4.8s; }
+.chispas-global .chispa:nth-child(14) { left: 60%; animation-delay: 6.5s; }
+.chispas-global .chispa:nth-child(15) { left: 30%; animation-delay: 7s; }
+.chispas-global .chispa:nth-child(16) { left: 15%; animation-delay: 5.5s; }
+
+@keyframes subir-chispa-global {
+    0%   { transform: translateY(0) translateX(0); opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { transform: translateY(-100vh) translateX(30px); opacity: 0; }
+}
+
+/* ========== Contenedor del artículo ========== */
+.cuerpo > .container {
+    max-width: 760px;              /* columna de lectura, como en las páginas legales */
+    padding: clamp(32px, 6vw, 72px) 20px 80px;
+}
+
+/* ========== Cabecera ========== */
+.header-articulo {
+    text-align: center;
+    margin-bottom: clamp(24px, 4vw, 40px);
+}
+
+.titulo-articulo1 {
+    font-size: clamp(2.2rem, 1.4rem + 4vw, 4rem);
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1.1;
+    color: var(--color-ember);
+    text-shadow: 0 0 25px rgba(var(--color-ember-rgb), 0.45);
+    margin: 0;
+}
+
+/* ========== Cartel ========== */
+.imagen-articulo1 {
+    display: block;
+    width: 100%;
+    max-width: 440px;
+    height: auto;                  /* anula el height="530" del HTML */
+    margin: 0 auto clamp(32px, 5vw, 48px);
+    border-radius: 10px;
+    border: 1px solid rgba(var(--color-ember-rgb), 0.4);
+    box-shadow: 0 0 20px rgba(var(--color-ember-rgb), 0.35),
+                0 0 60px rgba(var(--color-ember-rgb), 0.15);
+}
+
+/* ========== Texto ========== */
+.texto-articulo1 {
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    line-height: 1.8;
+    color: rgba(var(--color-text-rgb), 0.85);
+    margin: 0 0 clamp(32px, 5vw, 48px);
+}
+
+/* ========== Sección destacada ========== */
+.seccion-destacada {
+    padding: clamp(24px, 5vw, 48px) clamp(20px, 5vw, 48px);
+    margin-bottom: clamp(32px, 5vw, 48px);
+    background: rgba(var(--color-text-rgb), 0.03);
+    border: 1px solid rgba(var(--color-ember-rgb), 0.25);
+    border-radius: 12px;
+}
+
+.seccion-destacada h2 {
+    font-size: clamp(1.6rem, 1.1rem + 2.2vw, 2.4rem);
+    color: var(--color-ember);
+    text-align: center;
+    line-height: 1.2;
+    margin: 0 0 8px;
+}
+
+.seccion-destacada h3 {
+    font-size: clamp(1.1rem, 1rem + 0.6vw, 1.4rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-bronze);
+    text-align: center;
+    margin: 0 0 32px;
+}
+
+.seccion-destacada ul.texto-articulo1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.seccion-destacada li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.seccion-destacada li:last-child {
+    margin-bottom: 0;
+}
+
+/* Brasa como viñeta */
+.seccion-destacada li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0.65em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-ember);
+    box-shadow: 0 0 8px rgba(var(--color-ember-rgb), 0.8);
+}
+
+/* ========== Frase de cierre ========== */
+.texto-cierre {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: clamp(1.15rem, 1rem + 0.8vw, 1.5rem);
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color-text);
+    padding-top: clamp(24px, 4vw, 36px);
+    border-top: 1px solid rgba(var(--color-ember-rgb), 0.3);
+    margin-bottom: 0;
+}
+
+/* ========== Accesibilidad: movimiento reducido ========== */
+@media (prefers-reduced-motion: reduce) {
+    .chispas-global {
+        display: none;
+    }
+}
